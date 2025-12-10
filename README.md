@@ -18,4 +18,3 @@ Rain Lock is a smart touch-blocking app for Android that prevents accidental tou
 
 * **Main App Repository:** [https://github.com/SUDARSHANCHAUDHARI/RainLock](https://github.com/SUDARSHANCHAUDHARI/RainLock)
 * **Privacy Policy URL:** [https://sudarshanchaudhari.github.io/rainlock-privacy-policy/privacy-policy.md](https://sudarshanchaudhari.github.io/rainlock-privacy-policy/privacy-policy.md)
-
