@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Rain Lock</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2196F3;
+            border-bottom: 3px solid #2196F3;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #1976D2;
+            margin-top: 30px;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .contact {
+            background: #f0f7ff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Rain Lock</h1>
+        <p class="last-updated">Last updated: December 10, 2024</p>
+
+        <h2>1. Introduction</h2>
+        <p>
+            Rain Lock ("we", "our", or "the app") is committed to protecting your privacy. 
+            This Privacy Policy explains how we handle information when you use our mobile application.
+        </p>
+
+        <h2>2. Information We Collect</h2>
+        <p><strong>Rain Lock does not collect, store, or transmit any personal data.</strong></p>
+        
+        <p>The app operates entirely on your device and processes all data locally. We do not:</p>
+        <ul>
+            <li>Collect personal information</li>
+            <li>Store user data on external servers</li>
+            <li>Share data with third parties</li>
+            <li>Use analytics or tracking services</li>
+            <li>Access your contacts, messages, or other personal files</li>
+        </ul>
+
+        <h2>3. Permissions Used</h2>
+        <p>Rain Lock requires the following permissions to function:</p>
+
+        <h3>Required Permissions:</h3>
+        <ul>
+            <li>
+                <strong>SYSTEM_ALERT_WINDOW</strong> (Display over other apps)
+                <br>This permission is essential for the app's core functionality. It allows Rain Lock to display an overlay that blocks accidental touches during rain while you use navigation apps.
+            </li>
+            <li>
+                <strong>FOREGROUND_SERVICE</strong>
+                <br>Required to maintain the overlay service running in the background while you use other apps.
+            </li>
+            <li>
+                <strong>POST_NOTIFICATIONS</strong> (Android 13+)
+                <br>Required to show a persistent notification indicating that the overlay service is active.
+            </li>
+            <li>
+                <strong>QUERY_ALL_PACKAGES</strong> (Android 11+)
+                <br>Used to detect when navigation apps (Google Maps, Waze, etc.) are running, enabling automatic activation of touch blocking.
+            </li>
+        </ul>
+
+        <h3>Optional Permissions:</h3>
+        <ul>
+            <li>
+                <strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</strong>
+                <br>Only used if you enable the weather-based auto-enable feature. This permission allows the app to check your location for weather conditions. Location data is never stored or transmitted - it's only used locally to determine if rain is detected in your area. You can disable this feature entirely in the app settings.
+            </li>
+            <li>
+                <strong>READ_PHONE_STATE</strong>
+                <br>Used to detect incoming phone calls and automatically disable touch blocking so you can answer calls. No phone numbers or call data is stored or transmitted.
+            </li>
+            <li>
+                <strong>INTERNET</strong>
+                <br>Only used if you enable the weather feature to fetch weather data. Weather API requests are made directly from your device and no personal information is included in these requests.
+            </li>
+            <li>
+                <strong>VIBRATE</strong>
+                <br>Used for optional haptic feedback when touches are blocked. No data is collected.
+            </li>
+        </ul>
+
+        <h2>4. How We Use Information</h2>
+        <p>
+            Since we do not collect any personal data, there is no information to use, share, or sell. 
+            All app functionality operates entirely on your device using local processing only.
+        </p>
+
+        <h2>5. Data Storage</h2>
+        <p>
+            All app settings and preferences are stored locally on your device using Android's built-in 
+            SharedPreferences system. This data never leaves your device and is deleted when you 
+            uninstall the app.
+        </p>
+
+        <h2>6. Third-Party Services</h2>
+        <p>
+            Rain Lock may use third-party weather APIs (such as OpenWeatherMap) if you enable the 
+            weather-based auto-enable feature. When this feature is used:
+        </p>
+        <ul>
+            <li>Only your approximate location (city-level) is sent to the weather API</li>
+            <li>No personal identifiers are included</li>
+            <li>Weather data is cached locally and not stored permanently</li>
+            <li>You can disable this feature at any time in settings</li>
+        </ul>
+        <p>
+            Please refer to the weather API provider's privacy policy for their data handling practices.
+        </p>
+
+        <h2>7. Children's Privacy</h2>
+        <p>
+            Rain Lock does not knowingly collect information from children under 13. Since we do not 
+            collect any personal data, this is not applicable. The app is safe for users of all ages.
+        </p>
+
+        <h2>8. Your Rights</h2>
+        <p>Since we do not collect personal data, there is no data to access, modify, or delete.</p>
+        <p>You have full control over the app:</p>
+        <ul>
+            <li>You can disable any optional permissions in Android settings</li>
+            <li>You can uninstall the app at any time, which removes all local data</li>
+            <li>You can disable features (like weather) that require additional permissions</li>
+        </ul>
+
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. We will notify you of any changes 
+            by posting the new Privacy Policy on this page and updating the "Last updated" date.
+        </p>
+
+        <h2>10. Contact Us</h2>
+        <div class="contact">
+            <p>If you have any questions about this Privacy Policy, please contact us:</p>
+            <ul>
+                <li><strong>GitHub:</strong> <a href="https://github.com/SUDARSHANCHAUDHARI/rainlock-privacy-policy">https://github.com/SUDARSHANCHAUDHARI/rainlock-privacy-policy</a></li>
+                <li><strong>Email:</strong> [Your contact email]</li>
+            </ul>
+        </div>
+
+        <h2>11. Consent</h2>
+        <p>
+            By using Rain Lock, you consent to this Privacy Policy. If you do not agree with this 
+            policy, please do not use the app.
+        </p>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+        <p style="text-align: center; color: #666; font-size: 0.9em;">
+            © 2024 Rain Lock. All rights reserved.
+        </p>
+    </div>
+</body>
+</html>
+
