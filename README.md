@@ -1,100 +1,148 @@
-# Privacy Policy — Rain Lock
+# RainLock — Privacy Policy
 
-**Effective Date:** 2024-01-01
+**Effective Date:** 2026-03-21
 **Last Updated:** 2026-03-21
-**Developer:** SudarshanTechLabs
-**Contact:** sudarshantechlabs@gmail.com
-**Location:** Bangkok, Bangkok, Thailand
+**Version:** 1.0.0
+
+Published by **Sudarshan Tech Labs** | https://sudarshantechlabs.com | sudarshantechlabs@gmail.com
 
 ---
 
-## 1. Data Collection
-
-Rain Lock is designed with privacy first. **We do not collect, store, or transmit any personal data.**
-
-Specifically, Rain Lock does **not** collect:
-- Your name, email address, or any account information
-- Your location data (GPS coordinates are never stored or sent)
-- Device identifiers (IMEI, advertising ID, etc.)
-- Usage statistics or analytics
-- Crash reports sent to external servers
-- Any other personally identifiable information
-
-All processing takes place entirely **on your device**.
+RainLock is a security and lock screen app for Android. It uses biometric authentication, NFC, and location awareness to provide customisable device locking. All settings and security configurations are stored locally on your device using encrypted storage. Sudarshan Tech Labs does not collect personal data.
 
 ---
 
-## 2. Data Use
+## Data Collection
 
-Since no personal data is collected, there is no data to use, sell, or share.
+### Data Stored Locally on Your Device
 
-**Weather feature (optional):** If you enable the weather-based activation feature, Rain Lock sends your general location (city-level) to a third-party weather API to retrieve current rain conditions. This request is made directly from your device. SudarshanTechLabs does not store, log, or receive this data. You may disable the weather feature at any time in Settings.
+| Data | Purpose | Storage |
+|---|---|---|
+| Lock screen configuration and security settings | Core app functionality | EncryptedSharedPreferences |
+| App preferences | Personalisation | EncryptedSharedPreferences |
+
+No personal data is transmitted to Sudarshan Tech Labs or any third-party server.
+
+### Location Data
+
+RainLock uses device location to provide location-aware locking rules (e.g., auto-unlock at home). Location is processed on-device and is not transmitted to Sudarshan Tech Labs or stored in any cloud service.
+
+### Biometric Data
+
+RainLock uses Android's Biometric API for fingerprint or face authentication. Biometric data is managed entirely by your device's operating system and is never accessed by Sudarshan Tech Labs.
+
+### NFC
+
+RainLock can use NFC tags to trigger lock or unlock actions. NFC interactions are processed on-device and no data is transmitted externally.
+
+### Phone State
+
+The `READ_PHONE_STATE` permission is used to detect call states for lock screen management. Call information is not stored or transmitted.
 
 ---
 
-## 3. Third-Party Services
+## How We Use Your Data
 
-Rain Lock optionally integrates with weather data providers to detect rain conditions. When this feature is enabled:
-
-- A weather API request is made from your device using your approximate location.
-- SudarshanTechLabs does not have access to, store, or transmit this data.
-- You can disable weather integration entirely in the app Settings.
-
-No other third-party SDKs, analytics libraries, or advertising frameworks are included in Rain Lock.
+All data is used solely to provide the in-app lock screen and security functionality. No data is shared, analysed externally, or used for advertising.
 
 ---
 
-## 4. Permissions
+## Data Storage and Security
 
-Rain Lock requests the following Android permissions:
+- **All settings:** Stored in EncryptedSharedPreferences (AES-256 via Android Security library)
+- **Biometric:** Handled by Android OS — never accessed by the App directly
+- **No cloud storage:** Sudarshan Tech Labs operates no backend server
+- **Overlay service:** RainLock uses a foreground service with a system alert window to display the lock screen
 
-| Permission | Reason |
+## Data Retention
+
+| Data | Retention |
 |---|---|
-| `SYSTEM_ALERT_WINDOW` | Required to draw the touch-blocking overlay on top of other apps |
-| `FOREGROUND_SERVICE` | Keeps the overlay service running reliably in the background |
-| `POST_NOTIFICATIONS` | Shows a persistent notification while the overlay is active |
-| `INTERNET` | Used only for the optional weather feature |
-| `ACCESS_FINE_LOCATION` / `ACCESS_COARSE_LOCATION` | Used only for the optional weather feature; never stored |
-| `QUERY_ALL_PACKAGES` | Detects when a supported navigation app is in the foreground |
-| `READ_PHONE_STATE` | Detects incoming calls for auto-disable functionality |
-| `NFC` | Optional NFC-based quick-toggle support |
-| `VIBRATE` | Haptic feedback for unlock confirmation |
-
-No permission is used for advertising or data collection purposes.
+| All local settings | Until you reset settings or uninstall the App |
 
 ---
 
-## 5. Security
+## Data Sharing
 
-Because Rain Lock stores no personal data:
-- There is no user account to compromise
-- There is no server-side database
-- There is no network communication except the optional, user-enabled weather API call
-
-The app is built and signed by SudarshanTechLabs using a secure RSA-2048 keystore. All releases are distributed exclusively through the Google Play Store.
+We do not collect, share, or sell any user data. RainLock operates without transmitting data externally.
 
 ---
 
-## 6. Children's Privacy
+## Background Services
 
-Rain Lock does not knowingly collect any information from children under the age of 13 (or the applicable minimum age in your jurisdiction). If you believe a child has provided personal information through this app, please contact us immediately at sudarshantechlabs@gmail.com and we will take appropriate action.
-
----
-
-## 7. Changes to This Policy
-
-We may update this Privacy Policy from time to time. Any changes will be reflected in the **Last Updated** date at the top of this document. Continued use of Rain Lock after changes constitutes acceptance of the updated policy.
+RainLock runs a foreground service to maintain the lock screen overlay. A persistent notification is visible while the service is active. You can stop the service via the App settings.
 
 ---
 
-## 8. Contact Us
+## Permissions Explained
 
-If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us:
-
-**SudarshanTechLabs**
-Bangkok, Bangkok, Thailand
-Email: sudarshantechlabs@gmail.com
+| Permission | Why It Is Needed |
+|---|---|
+| `SYSTEM_ALERT_WINDOW` | Display the lock screen overlay above other apps |
+| `FOREGROUND_SERVICE` | Run the lock screen service in the background |
+| `FOREGROUND_SERVICE_SPECIAL_USE` | Required foreground service type for lock screen overlays |
+| `POST_NOTIFICATIONS` | Display the foreground service notification |
+| `QUERY_ALL_PACKAGES` | Detect installed apps for app-specific locking rules |
+| `ACCESS_FINE_LOCATION` | Enable location-based auto-lock/unlock rules |
+| `ACCESS_COARSE_LOCATION` | Enable approximate location-based rules |
+| `ACCESS_BACKGROUND_LOCATION` | Apply location rules when the App is in the background |
+| `INTERNET` | Network library initialisation (no personal data sent) |
+| `VIBRATE` | Haptic feedback for lock/unlock actions |
+| `READ_PHONE_STATE` | Detect incoming calls to manage lock screen during calls |
+| `NFC` | Enable NFC tag-based lock/unlock triggers |
 
 ---
 
-*This privacy policy applies to the Rain Lock Android application (com.sudarshantechlabs.rainlock) developed and published by SudarshanTechLabs.*
+## Your Rights and Controls
+
+- **Reset all settings:** Use the reset option in App Settings
+- **Disable location rules:** Turn off location-based locking in App Settings
+- **Delete all data:** Uninstall or go to Android Settings > Apps > RainLock > Storage > Clear Data
+
+---
+
+## Children's Privacy
+
+RainLock is not directed at children under 13. We do not collect any personal information.
+
+---
+
+## Changes to This Policy
+
+We may update this Privacy Policy from time to time. We will notify you of significant changes via:
+
+- In-app notification
+- Updated policy date on this page
+
+Continued use of RainLock after changes become effective constitutes your acceptance of the updated policy.
+
+---
+
+## Contact Us
+
+For privacy questions, data access requests, or account deletion:
+
+- **Email:** sudarshantechlabs@gmail.com
+- **Developer:** sunny.sudarshan@gmail.com
+- **Website:** https://sudarshantechlabs.com
+- **Response Time:** Within 48 hours
+
+---
+
+## Play Store Data Safety Summary
+
+| Data type | Collected | Shared | Purpose |
+|---|---|---|---|
+| Security settings | Local only (encrypted) | No | App functionality |
+| Location (if enabled) | On-device only | No | Location-based locking |
+
+---
+
+---
+
+**This privacy policy complies with:**
+- Google Play Store requirements
+- GDPR (General Data Protection Regulation)
+- CCPA (California Consumer Privacy Act)
+
+**Last reviewed:** 2026-03-21
