@@ -48,7 +48,7 @@ RainLock ("we," "our," or "us") is an Android app. RainLock is an Android lock-s
 ## Data Sharing
 
 ### Family Groups
-- RainLock does not use MyFamilyTracker-style family groups unless explicitly described in this policy.
+- RainLock does not use family groups unless explicitly described in this policy.
 - If this app includes pairing, sharing, or collaboration features, data is shared only with the people or services required for the feature you choose.
 - You control feature use through the app settings, permissions, account controls, or platform settings.
 
