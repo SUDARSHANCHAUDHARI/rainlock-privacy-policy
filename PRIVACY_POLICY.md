@@ -2,7 +2,7 @@
 
 **Effective Date:** 2026-05-17
 **Last Updated:** 2026-11-08
-**Version:** 1.0.0
+**Version:** 1.2.0
 
 Published by **Sudarshan Tech Labs** | https://sudarshantechlabs.com | sudarshantechlabs@gmail.com
 
@@ -157,6 +157,24 @@ For privacy questions:
 | Device or other IDs | No | No | — |
 
 Declare location as **shared with a third party** in the Play Console data safety form, and mark it optional, since it is only used when the user enables weather-based auto-enable.
+
+---
+
+## Recent Updates (Version 1.2.0 - November 8, 2026)
+
+- **Named the third party that receives your location.** RainLock sends your coordinates to **OpenWeatherMap** (`api.openweathermap.org`) when weather-based auto-enable is switched on. The previous text said only that weather features "may contact their configured provider", which named nobody. This is the app's only outbound request.
+- **Marked location as shared with a third party** in the Play data safety summary, and optional, since it only happens when you enable that feature.
+- **Removed claims about features that do not exist** — `ACCESS_BACKGROUND_LOCATION`, which the app does not declare, and location-based unlock and security zones, whose geofencing code was removed.
+- **Added the permissions the policy had omitted** — `QUERY_ALL_PACKAGES`, `PACKAGE_USAGE_STATS`, `READ_PHONE_STATE` and `SYSTEM_ALERT_WINDOW` — and stated that the installed-app list and foreground-app readings never leave your device.
+- **Listed the library-merged permissions,** including that `USE_BIOMETRIC` and `USE_FINGERPRINT` arrive with a declared dependency whose helper has no callers, so no biometric prompt is ever shown.
+- **Removed the boilerplate** claiming protection by "the browser, Firebase, Google, GitHub" — RainLock uses none of them.
+
+---
+
+## Recent Updates (Version 1.1.0 - May 17, 2026)
+
+- **Aligned policy with the shared privacy-policy structure.**
+- **Clarified overlay, NFC, location-zone, package visibility, and local security data behavior.**
 
 ---
 

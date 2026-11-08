@@ -29,7 +29,7 @@
   <main>
     <article>
       <h1>RainLock — Privacy Policy</h1>
-      <p><strong>Effective Date:</strong> 2026-05-17 <strong>Last Updated:</strong> 2026-11-08 <strong>Version:</strong> 1.0.0</p>
+      <p><strong>Effective Date:</strong> 2026-05-17 <strong>Last Updated:</strong> 2026-11-08 <strong>Version:</strong> 1.2.0</p>
       <p>Published by <strong>Sudarshan Tech Labs</strong> | <a href="https://sudarshantechlabs.com">https://sudarshantechlabs.com</a> | sudarshantechlabs@gmail.com</p>
       <hr>
       <p>RainLock draws a touch-blocking overlay over your screen so rain cannot register as taps while you use your phone in the wet — typically a navigation app while driving, cycling, walking or riding.</p>
@@ -150,6 +150,22 @@
       <tr><td>Device or other IDs</td><td>No</td><td>No</td><td>—</td></tr>
       </tbody></table>
       <p>Declare location as <strong>shared with a third party</strong> in the Play Console data safety form, and mark it optional, since it is only used when the user enables weather-based auto-enable.</p>
+      <hr>
+      <h2>Recent Updates (Version 1.2.0 - November 8, 2026)</h2>
+      <ul>
+      <li><strong>Named the third party that receives your location.</strong> RainLock sends your coordinates to <strong>OpenWeatherMap</strong> (<code>api.openweathermap.org</code>) when weather-based auto-enable is switched on. The previous text said only that weather features "may contact their configured provider", which named nobody. This is the app's only outbound request.</li>
+      <li><strong>Marked location as shared with a third party</strong> in the Play data safety summary, and optional, since it only happens when you enable that feature.</li>
+      <li><strong>Removed claims about features that do not exist</strong> — <code>ACCESS_BACKGROUND_LOCATION</code>, which the app does not declare, and location-based unlock and security zones, whose geofencing code was removed.</li>
+      <li><strong>Added the permissions the policy had omitted</strong> — <code>QUERY_ALL_PACKAGES</code>, <code>PACKAGE_USAGE_STATS</code>, <code>READ_PHONE_STATE</code> and <code>SYSTEM_ALERT_WINDOW</code> — and stated that the installed-app list and foreground-app readings never leave your device.</li>
+      <li><strong>Listed the library-merged permissions,</strong> including that <code>USE_BIOMETRIC</code> and <code>USE_FINGERPRINT</code> arrive with a declared dependency whose helper has no callers, so no biometric prompt is ever shown.</li>
+      <li><strong>Removed the boilerplate</strong> claiming protection by "the browser, Firebase, Google, GitHub" — RainLock uses none of them.</li>
+      </ul>
+      <hr>
+      <h2>Recent Updates (Version 1.1.0 - May 17, 2026)</h2>
+      <ul>
+      <li><strong>Aligned policy with the shared privacy-policy structure.</strong></li>
+      <li><strong>Clarified overlay, NFC, location-zone, package visibility, and local security data behavior.</strong></li>
+      </ul>
       <hr>
       <p><strong>This privacy policy complies with:</strong></p>
       <ul>
