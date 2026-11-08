@@ -94,7 +94,16 @@ RainLock runs two foreground services, each with a persistent notification while
 | `VIBRATE` | Haptic feedback when the overlay turns on and off |
 | `BIND_QUICK_SETTINGS_TILE` | Provide the quick settings tile |
 
-The app list from `QUERY_ALL_PACKAGES` and the foreground-app readings from `PACKAGE_USAGE_STATS` stay on your device. Neither is transmitted.
+That is all thirteen permissions RainLock declares for itself. The app list from `QUERY_ALL_PACKAGES` and the foreground-app readings from `PACKAGE_USAGE_STATS` stay on your device. Neither is transmitted.
+
+### Permissions added by Android libraries
+
+Three more appear in the app's permission list because a library declares them, not because RainLock asks:
+
+| Permission | Comes from | What it does |
+|---|---|---|
+| `USE_BIOMETRIC`, `USE_FINGERPRINT` | the `androidx.biometric` library, which is a declared dependency | **No biometric prompt is ever shown.** The helper class that would show one has no callers, so the feature is not wired up. Even if it were, Android never gives an app your fingerprint or face data — only a success or failure result |
+| `DUMP` | a build-time library | Diagnostic permission. Android grants it only to system apps, so it has no effect here |
 
 ---
 

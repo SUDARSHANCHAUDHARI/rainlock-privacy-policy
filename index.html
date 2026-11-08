@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RainLock Privacy Policy</title>
-<style>
+  <style>
     :root { color-scheme: light dark; --bg: #f7f8fb; --fg: #18202f; --muted: #5c667a; --card: #ffffff; --border: #d9dee8; --link: #175bd6; }
     @media (prefers-color-scheme: dark) { :root { --bg: #111318; --fg: #edf1f7; --muted: #a8b0c0; --card: #191d25; --border: #303746; --link: #8bb4ff; } }
     body { margin: 0; background: var(--bg); color: var(--fg); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
@@ -99,7 +99,15 @@
       <tr><td><code>VIBRATE</code></td><td>Haptic feedback when the overlay turns on and off</td></tr>
       <tr><td><code>BIND_QUICK_SETTINGS_TILE</code></td><td>Provide the quick settings tile</td></tr>
       </tbody></table>
-      <p>The app list from <code>QUERY_ALL_PACKAGES</code> and the foreground-app readings from <code>PACKAGE_USAGE_STATS</code> stay on your device. Neither is transmitted.</p>
+      <p>That is all thirteen permissions RainLock declares for itself. The app list from <code>QUERY_ALL_PACKAGES</code> and the foreground-app readings from <code>PACKAGE_USAGE_STATS</code> stay on your device. Neither is transmitted.</p>
+      <h3>Permissions added by Android libraries</h3>
+      <p>Three more appear in the app's permission list because a library declares them, not because RainLock asks:</p>
+      <table>
+      <thead><tr><th>Permission</th><th>Comes from</th><th>What it does</th></tr></thead>
+      <tbody>
+      <tr><td><code>USE_BIOMETRIC</code>, <code>USE_FINGERPRINT</code></td><td>the <code>androidx.biometric</code> library, which is a declared dependency</td><td><strong>No biometric prompt is ever shown.</strong> The helper class that would show one has no callers, so the feature is not wired up. Even if it were, Android never gives an app your fingerprint or face data — only a success or failure result</td></tr>
+      <tr><td><code>DUMP</code></td><td>a build-time library</td><td>Diagnostic permission. Android grants it only to system apps, so it has no effect here</td></tr>
+      </tbody></table>
       <hr>
       <h2>Your Rights and Controls</h2>
       <ul>
