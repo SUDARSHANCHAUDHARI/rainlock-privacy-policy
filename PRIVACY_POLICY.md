@@ -1,211 +1,175 @@
-# RainLock Privacy Policy
+# RainLock — Privacy Policy
 
-**Effective Date:** May 17, 2026
-_Last updated: May 17, 2026_
-**Version:** 1.1.0
+**Effective Date:** 2026-05-17
+**Last Updated:** 2026-11-08
+**Version:** 1.2.0
 
-RainLock ("we," "our," or "us") is an Android app. RainLock is an Android lock-screen and security utility with overlays, local security rules, NFC, location-based zones, and optional weather/network features. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using RainLock you agree to the practices described below.
-
-## Information We Collect
-
-### Location Data
-- RainLock may access location only for user-enabled location-based unlock or security zones.
-- Location data is used locally for the configured rule and is not continuously shared with Sudarshan Tech Labs.
-
-### Account Information
-- No account is required to use RainLock.
-
-### Device Information
-- Lock settings, security rules, NFC tag registrations, overlay state, optional location zones, package/app visibility needed for lock behavior, and preferences are stored locally.
-
-## How We Use Your Information
-
-### Location Sharing
-- Evaluate local location-based unlock/security zones when you enable that feature.
-
-### Account Management
-- Run lock-screen overlays, quick settings, NFC rules, and local security workflows.
-
-### Service Improvement
-- Improve local security behavior and reliability.
-- We do not sell, rent, or monetize your security settings.
-
-## Storage and Retention
-
-### Data Storage
-- Security configuration, NFC tags, location zones, and preferences are stored locally on your device.
-- No Sudarshan Tech Labs cloud server is used for RainLock security settings.
-
-### Data Retention
-- Local security settings remain until you delete them, clear app data, or uninstall the app.
-
-### Data Security
-- Data is protected using platform security controls available on Android, the browser, Firebase, Google, GitHub, or other services named in this policy.
-- Local data remains on your device or browser unless a feature you use requires a named third-party service.
-- Network communication uses HTTPS/TLS where applicable.
-- You should protect your device, browser profile, and Google/GitHub accounts with strong authentication.
-
-## Data Sharing
-
-### Family Groups
-- RainLock does not use family groups unless explicitly described in this policy.
-- If this app includes pairing, sharing, or collaboration features, data is shared only with the people or services required for the feature you choose.
-- You control feature use through the app settings, permissions, account controls, or platform settings.
-
-### Third Parties
-- No security settings are shared with third parties by Sudarshan Tech Labs.
-- Optional weather/network features, if used, may contact their configured provider.
-
-We do **not** share your data with:
-- Data brokers
-- Unrelated advertising networks, unless advertising is explicitly listed above for this app
-- Third parties unrelated to the app features described in this policy
-
-## Permissions Used
-
-### Required Permissions
-
-* **SYSTEM_ALERT_WINDOW**: Used to display lock overlays after you grant overlay permission.
-* **FOREGROUND_SERVICE and FOREGROUND_SERVICE_SPECIAL_USE**: Used to keep lock/security services active.
-* **POST_NOTIFICATIONS and VIBRATE**: Used for security/status notifications and feedback.
-* **QUERY_ALL_PACKAGES**: Used only where app visibility is needed for lock behavior.
-* **ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION, ACCESS_BACKGROUND_LOCATION**: Used only for location-based security zones when enabled.
-* **INTERNET**: Used for optional network/weather features.
-* **READ_PHONE_STATE**: Used only for phone-state-aware lock behavior if enabled.
-* **NFC**: Used for NFC lock/unlock rules.
-
-### Optional Permissions
-
-* Location zones, NFC, overlay, phone-state behavior, and notifications are controlled by you through the app or Android settings.
-
-## Your Rights and Controls
-
-### Location Sharing Control
-- You can disable location-based zones in the app or revoke location permission in Android settings.
-
-### Account Management
-- No account is required.
-
-### Data Access
-- You can view, edit, or delete local RainLock settings in the app.
-
-### GDPR Rights (EU Users)
-If you are in the European Union, you have additional rights:
-- **Right to Access**: Request a copy of your personal data
-- **Right to Rectification**: Correct inaccurate data
-- **Right to Erasure**: Request deletion of your data
-- **Right to Restrict Processing**: Limit how we use your data
-- **Right to Data Portability**: Receive your data in a portable format
-- **Right to Object**: Object to certain types of processing
-
-To exercise these rights, contact us using the methods in the Contact Us section.
-
-### Permissions
-- You can revoke Android permissions in Android Settings -> Apps -> RainLock -> Permissions.
-- Browser permissions and storage can be managed in your browser site settings for web apps.
-- Revoking required permissions may prevent related features from functioning.
-
-## Children's Privacy
-
-- Our app is **not intended for children under 13**.
-- We do not knowingly collect data from children under 13.
-- If you are a parent or guardian and believe your child has provided personal information, please contact us to request deletion.
-- Parents and guardians should supervise children's use of apps that store personal content.
-
-## Security
-
-- Local data is protected by Android, browser, or operating-system app sandboxing.
-- Network communication uses HTTPS/TLS where applicable.
-- Third-party services named in this policy provide their own security controls and privacy policies.
-- You are responsible for protecting your device, browser profile, and account credentials.
-- We do not sell your personal data.
-
-## Changes to This Policy
-
-We may update this Privacy Policy to reflect new features, legal requirements, or changes in our practices. Significant changes will be:
-- Noted in the app release notes or repository when applicable
-- Reflected with a new "Last updated" date
-- Communicated in the app or project page if the change is significant
-
-The "Last updated" date at the top of this policy indicates when revisions occurred. Continued use of the app after changes constitutes acceptance of the updated policy.
-
-## Contact Us
-
-If you have questions about this Privacy Policy, wish to request data deletion, or have privacy concerns:
-
-* **GitHub Repository:** https://github.com/SUDARSHANCHAUDHARI/rainlock-privacy-policy
-* **Email:** sunny.sudarshan@gmail.com
-* **Main App Repository:** https://github.com/SUDARSHANCHAUDHARI/RainLock
-
-We will respond as quickly as possible, typically within 48 hours.
-
-## Data Deletion
-
-### How to Delete Your Account:
-This app does not require an account. You can delete local app data using the options below:
-
-#### Option 1: In-App Deletion
-1. Open RainLock
-2. Delete individual entries, reminders, history, or settings where the app provides controls
-3. Or use Android/browser settings to clear app/site data
-4. Uninstalling the app also removes local app-private data
-
-#### Option 2: Email Deletion Request
-Send an email to: **support@sudarshantechlabs.com** or **sunny.sudarshan@gmail.com**
-- Subject: "Data Deletion Request - RainLock"
-- Include: The email/account identifier used in the app, if any
-- We will process deletion requests as quickly as possible, typically within 48 hours for acknowledgement
-
-#### Option 3: Web Deletion
-1. Visit the privacy policy website for contact and support information
-2. For browser apps, clear browser storage for the site
-3. For Android apps, clear storage from Android Settings if you want a full local reset
-
-### What Gets Deleted:
-- Local app data stored by the app
-- Local preferences and reminder/history records
-- Cached data controlled by the app or browser
-- Exported/shared files only if you delete them from where you saved them
-
-### Data Retention After Deletion:
-- **Immediate:** clearing app/site data removes local app-private data from your device/browser
-- **Uninstall:** removes app-private local data from Android apps
-- **Exports/shared files:** remain wherever you saved or sent them until you delete them
-
-To request deletion of your data:
-
-1. Open RainLock, if installed
-2. Delete local content or clear app/site data where applicable
-3. Contact support via email: sunny.sudarshan@gmail.com
-4. Request account/data deletion and include enough detail for us to identify the app and any account, if one exists
-5. We will confirm what data can be deleted and complete the request according to the retention terms above
-
-## Firebase and Google Services
-
-This app may use the following services depending on the features you enable and the installed version:
-
-- No third-party cloud service is required for core RainLock security features.
-
-Please review relevant third-party privacy policies:
-
-- [Google Privacy Policy](https://policies.google.com/privacy)
-- [Firebase Privacy Policy](https://firebase.google.com/support/privacy)
-- [Google Play Terms](https://play.google.com/about/play-terms/)
-- [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
-
-## About RainLock
-
-RainLock is built with privacy in mind. The app is built with:
-- Kotlin and Jetpack Compose
-- Android overlay and foreground service APIs
-- NFC and optional location-based rules
-- Local security configuration
-
-The app collects only the data needed for the features described in this policy, and local-first features keep data on your device whenever possible.
+Published by **Sudarshan Tech Labs** | https://sudarshantechlabs.com | sudarshantechlabs@gmail.com
 
 ---
 
-**Last Updated:** May 17, 2026
+RainLock draws a touch-blocking overlay over your screen so rain cannot register as taps while you use your phone in the wet — typically a navigation app while driving, cycling, walking or riding.
+
+Almost everything RainLock does happens on your device. There is one exception, and it is the most important thing in this policy: **if you turn on the weather-based auto-enable feature, RainLock sends your location to OpenWeatherMap**, a third party, to find out whether it is raining where you are. That transfer is described in full below.
+
+RainLock has no account, no sign-in, no analytics and no crash reporting. We operate no server and receive nothing from the app.
+
+---
+
+## Data Collection
+
+### Data sent to a third party
+
+| Data | Sent to | When | Why |
+|---|---|---|---|
+| Your latitude and longitude | **OpenWeatherMap** (`api.openweathermap.org`) | Only while the weather-based auto-enable feature is switched on, checked about every 5 minutes | To determine whether it is currently raining at your location, so the overlay can arm itself |
+
+The request takes the form `https://api.openweathermap.org/data/2.5/weather?lat=…&lon=…`. It contains your coordinates and nothing else — no device identifier, no account, and nothing about your phone or your use of the app. OpenWeatherMap's handling of that request is governed by their own privacy policy: https://openweathermap.org/privacy-policy
+
+**This is the only outbound network request RainLock makes.** If you never enable weather-based auto-enable, RainLock sends nothing anywhere.
+
+Note also that the feature is only present in a build configured with a weather API key. If the build has no key, the weather check is skipped entirely and no request is made.
+
+### Data stored locally on your device
+
+| Data | Purpose | Storage |
+|---|---|---|
+| Your settings — overlay behaviour, exit gesture, haptics, auto-enable preferences | Running the app the way you configured it | SharedPreferences on your device |
+| Which apps you whitelisted for auto-enable | Turning the overlay off when you open an app you chose | SharedPreferences on your device |
+| Onboarding and version state | Showing the right screens once | SharedPreferences on your device |
+
+**We never receive any of it.**
+
+---
+
+## How We Use Your Data
+
+Your settings are read only by the app, on your device. Your location is used for one thing: asking OpenWeatherMap whether it is raining. We do not store your location, not on your device beyond the moment of the request, and not anywhere else.
+
+---
+
+## Data Storage and Security
+
+- **Settings are stored locally** in SharedPreferences, inside the app's private directory, protected by Android's application sandbox
+- **Your location is not retained.** It is read, sent in the weather request, and discarded
+- **No Sudarshan Tech Labs server exists.** There is nothing for us to store
+
+## Data Retention
+
+| Data | Retention |
+|---|---|
+| Local settings | Until you delete them, clear app data, or uninstall |
+| Location | Not retained by the app. OpenWeatherMap's retention is theirs, per their policy |
+
+---
+
+## Data Sharing
+
+We do not sell your data. The one sharing that occurs is the location transfer to OpenWeatherMap described above, and only while you have that feature enabled.
+
+---
+
+## Background Services
+
+RainLock runs two foreground services, each with a persistent notification while active. Both are declared as `specialUse`, because Android defines no service type that covers drawing an overlay or watching which app is in the foreground.
+
+- **Rain Lock overlay service** — keeps the touch-blocking overlay drawn for as long as you leave it on. Only you dismiss it, through the on-screen emergency exit or your configured exit gesture.
+- **Auto-enable monitoring service** — when you have enabled auto-enable and granted Usage Access, checks which app is in the foreground about every 5 seconds, and optionally the weather about every 5 minutes, so the overlay arms and disarms itself.
+
+---
+
+## Permissions Explained
+
+| Permission | Why It Is Needed |
+|---|---|
+| `SYSTEM_ALERT_WINDOW` | Draw the touch-blocking overlay over other apps. This is the core function |
+| `FOREGROUND_SERVICE`, `FOREGROUND_SERVICE_SPECIAL_USE` | Keep the overlay and the auto-enable monitor running while you need them |
+| `POST_NOTIFICATIONS` | Show the persistent notification each foreground service requires |
+| `ACCESS_FINE_LOCATION`, `ACCESS_COARSE_LOCATION` | **Only** to supply coordinates to the OpenWeatherMap request, for weather-based auto-enable. Location is used nowhere else in the app |
+| `INTERNET` | **Only** for that OpenWeatherMap request |
+| `PACKAGE_USAGE_STATS` | Detect which app is in the foreground, so auto-enable can arm and disarm. Android grants this only through a settings screen you visit yourself |
+| `QUERY_ALL_PACKAGES` | List installed apps so you can choose which to whitelist for auto-enable |
+| `READ_PHONE_STATE` | Detect an incoming call so the overlay does not block you answering it |
+| `NFC` | Let you toggle the overlay by tapping an NFC tag, if you set one up |
+| `VIBRATE` | Haptic feedback when the overlay turns on and off |
+
+That is all twelve permissions RainLock declares for itself. The app list from `QUERY_ALL_PACKAGES` and the foreground-app readings from `PACKAGE_USAGE_STATS` stay on your device. Neither is transmitted.
+
+Two further permission names appear inside the app's merged manifest without being permissions RainLock requests: `BIND_QUICK_SETTINGS_TILE`, which Android requires be set on the quick-settings tile service so that only the system can start it, and `DUMP`, set the same way on a library's diagnostic component. Both are requirements on whatever calls those components, not grants to this app, and neither appears in its permission list.
+
+### Permissions added by Android libraries
+
+Two more appear in the app's permission list because a library declares them, not because RainLock asks:
+
+| Permission | Comes from | What it does |
+|---|---|---|
+| `USE_BIOMETRIC`, `USE_FINGERPRINT` | the `androidx.biometric` library, which is a declared dependency | **No biometric prompt is ever shown.** The helper class that would show one has no callers, so the feature is not wired up. Even if it were, Android never gives an app your fingerprint or face data — only a success or failure result |
+
+So RainLock declares twelve permissions and the finished build requests fourteen. Verified against the merged manifest of the release build rather than the app's own file.
+
+---
+
+## Your Rights and Controls
+
+- **Stop all network activity:** turn off weather-based auto-enable. RainLock then makes no outbound request at all
+- **Revoke location:** Android Settings → Apps → RainLock → Permissions. The weather check stops working; nothing else is affected
+- **Revoke Usage Access:** Android Settings → Apps → Special app access → Usage access. Auto-enable stops arming itself; the overlay still works manually
+- **Delete all data:** uninstall, or Android Settings → Apps → RainLock → Storage → Clear Data
+
+---
+
+## Children's Privacy
+
+RainLock is not directed at children under 13, and we collect no personal information from anyone.
+
+---
+
+## Changes to This Policy
+
+We may update this Privacy Policy from time to time. We will notify you of significant changes via:
+
+- In-app notification
+- Updated policy date on this page
+
+Continued use of RainLock after changes become effective constitutes your acceptance of the updated policy.
+
+---
+
+## Contact Us
+
+For privacy questions:
+
+- **Email:** sudarshantechlabs@gmail.com
+- **Developer:** sunny.sudarshan@gmail.com
+- **Website:** https://sudarshantechlabs.com
+- **Response Time:** Within 48 hours
+
+---
+
+## Play Store Data Safety Summary
+
+| Data type | Collected | Shared | Purpose |
+|---|---|---|---|
+| Approximate location | Yes, in transit only | **Yes — OpenWeatherMap** | App functionality (weather-based auto-enable) |
+| Precise location | Yes, in transit only | **Yes — OpenWeatherMap** | App functionality (weather-based auto-enable) |
+| Installed app list | Local only, never transmitted | No | App functionality (auto-enable whitelist) |
+| App activity (foreground app) | Local only, never transmitted | No | App functionality (auto-enable) |
+| Personal info | No | No | — |
+| Crash logs | No | No | — |
+| Device or other IDs | No | No | — |
+
+Declare location as **shared with a third party** in the Play Console data safety form, and mark it optional, since it is only used when the user enables weather-based auto-enable.
+
+---
+
+## Recent Updates (Version 1.2.0 - November 8, 2026)
+
+- **Named the third party that receives your location.** RainLock sends your coordinates to **OpenWeatherMap** (`api.openweathermap.org`) when weather-based auto-enable is switched on. The previous text said only that weather features "may contact their configured provider", which named nobody. This is the app's only outbound request.
+- **Marked location as shared with a third party** in the Play data safety summary, and optional, since it only happens when you enable that feature.
+- **Removed claims about features that do not exist** — `ACCESS_BACKGROUND_LOCATION`, which the app does not declare, and location-based unlock and security zones, whose geofencing code was removed.
+- **Added the permissions the policy had omitted** — `QUERY_ALL_PACKAGES`, `PACKAGE_USAGE_STATS`, `READ_PHONE_STATE` and `SYSTEM_ALERT_WINDOW` — and stated that the installed-app list and foreground-app readings never leave your device.
+- **Listed the library-merged permissions,** including that `USE_BIOMETRIC` and `USE_FINGERPRINT` arrive with a declared dependency whose helper has no callers, so no biometric prompt is ever shown.
+- **Removed the boilerplate** claiming protection by "the browser, Firebase, Google, GitHub" — RainLock uses none of them.
 
 ---
 
@@ -213,3 +177,16 @@ The app collects only the data needed for the features described in this policy,
 
 - **Aligned policy with the shared privacy-policy structure.**
 - **Clarified overlay, NFC, location-zone, package visibility, and local security data behavior.**
+
+---
+
+**This privacy policy complies with:**
+- Google Play Store requirements
+- GDPR (General Data Protection Regulation)
+- CCPA (California Consumer Privacy Act)
+
+**Last reviewed:** 2026-11-08
+
+---
+
+This is the published policy, served at https://sudarshanchaudhari.github.io/rainlock-privacy-policy/ from the `main` branch of this repository. `index.html` carries the same content for the web and must be updated alongside this file.
