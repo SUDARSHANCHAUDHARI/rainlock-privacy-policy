@@ -97,17 +97,17 @@
       <tr><td><code>READ_PHONE_STATE</code></td><td>Detect an incoming call so the overlay does not block you answering it</td></tr>
       <tr><td><code>NFC</code></td><td>Let you toggle the overlay by tapping an NFC tag, if you set one up</td></tr>
       <tr><td><code>VIBRATE</code></td><td>Haptic feedback when the overlay turns on and off</td></tr>
-      <tr><td><code>BIND_QUICK_SETTINGS_TILE</code></td><td>Provide the quick settings tile</td></tr>
       </tbody></table>
-      <p>That is all thirteen permissions RainLock declares for itself. The app list from <code>QUERY_ALL_PACKAGES</code> and the foreground-app readings from <code>PACKAGE_USAGE_STATS</code> stay on your device. Neither is transmitted.</p>
+      <p>That is all twelve permissions RainLock declares for itself. The app list from <code>QUERY_ALL_PACKAGES</code> and the foreground-app readings from <code>PACKAGE_USAGE_STATS</code> stay on your device. Neither is transmitted.</p>
+      <p>Two further permission names appear inside the app's merged manifest without being permissions RainLock requests: <code>BIND_QUICK_SETTINGS_TILE</code>, which Android requires be set on the quick-settings tile service so that only the system can start it, and <code>DUMP</code>, set the same way on a library's diagnostic component. Both are requirements on whatever calls those components, not grants to this app, and neither appears in its permission list.</p>
       <h3>Permissions added by Android libraries</h3>
-      <p>Three more appear in the app's permission list because a library declares them, not because RainLock asks:</p>
+      <p>Two more appear in the app's permission list because a library declares them, not because RainLock asks:</p>
       <table>
       <thead><tr><th>Permission</th><th>Comes from</th><th>What it does</th></tr></thead>
       <tbody>
       <tr><td><code>USE_BIOMETRIC</code>, <code>USE_FINGERPRINT</code></td><td>the <code>androidx.biometric</code> library, which is a declared dependency</td><td><strong>No biometric prompt is ever shown.</strong> The helper class that would show one has no callers, so the feature is not wired up. Even if it were, Android never gives an app your fingerprint or face data — only a success or failure result</td></tr>
-      <tr><td><code>DUMP</code></td><td>a build-time library</td><td>Diagnostic permission. Android grants it only to system apps, so it has no effect here</td></tr>
       </tbody></table>
+      <p>So RainLock declares twelve permissions and the finished build requests fourteen. Verified against the merged manifest of the release build rather than the app's own file.</p>
       <hr>
       <h2>Your Rights and Controls</h2>
       <ul>

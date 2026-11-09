@@ -92,18 +92,20 @@ RainLock runs two foreground services, each with a persistent notification while
 | `READ_PHONE_STATE` | Detect an incoming call so the overlay does not block you answering it |
 | `NFC` | Let you toggle the overlay by tapping an NFC tag, if you set one up |
 | `VIBRATE` | Haptic feedback when the overlay turns on and off |
-| `BIND_QUICK_SETTINGS_TILE` | Provide the quick settings tile |
 
-That is all thirteen permissions RainLock declares for itself. The app list from `QUERY_ALL_PACKAGES` and the foreground-app readings from `PACKAGE_USAGE_STATS` stay on your device. Neither is transmitted.
+That is all twelve permissions RainLock declares for itself. The app list from `QUERY_ALL_PACKAGES` and the foreground-app readings from `PACKAGE_USAGE_STATS` stay on your device. Neither is transmitted.
+
+Two further permission names appear inside the app's merged manifest without being permissions RainLock requests: `BIND_QUICK_SETTINGS_TILE`, which Android requires be set on the quick-settings tile service so that only the system can start it, and `DUMP`, set the same way on a library's diagnostic component. Both are requirements on whatever calls those components, not grants to this app, and neither appears in its permission list.
 
 ### Permissions added by Android libraries
 
-Three more appear in the app's permission list because a library declares them, not because RainLock asks:
+Two more appear in the app's permission list because a library declares them, not because RainLock asks:
 
 | Permission | Comes from | What it does |
 |---|---|---|
 | `USE_BIOMETRIC`, `USE_FINGERPRINT` | the `androidx.biometric` library, which is a declared dependency | **No biometric prompt is ever shown.** The helper class that would show one has no callers, so the feature is not wired up. Even if it were, Android never gives an app your fingerprint or face data — only a success or failure result |
-| `DUMP` | a build-time library | Diagnostic permission. Android grants it only to system apps, so it has no effect here |
+
+So RainLock declares twelve permissions and the finished build requests fourteen. Verified against the merged manifest of the release build rather than the app's own file.
 
 ---
 
